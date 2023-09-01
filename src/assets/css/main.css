@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  color: rgb(68, 68, 68);
+  font-family: 'Noto Sans TC', sans-serif;
+}
