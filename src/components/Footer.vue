@@ -45,7 +45,7 @@
   ]
 </script>
 <template>
-  <footer class="w-full bg-[#93B5C6]">
+  <footer class="w-full bg-[#aa3232]">
     <div class="max-w-screen-xl mx-auto flex items-center justify-cetner flex-col py-20">
       <!-- 上排資訊  -->
       <div class="flex items-center justify-between w-full mb-6">
@@ -64,7 +64,7 @@
 
       <!-- Copy Right -->
       <p class="mx-auto text-center text-xs text-white w-full pt-6 border-t border-gray opacity-60"
-        >&copy; {{ new Date().getFullYear() }} TOUCHING SPORT
+        >&copy; {{ new Date().getFullYear() }} TOUCHING SPORT Co.
       </p>
     </div>
   </footer>

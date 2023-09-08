@@ -42,14 +42,15 @@
     fitopia: {
       id: 0,
       value: 'fitopia',
-      name: '團練健身房',
+      name: '中和健身中心',
       position: {
         lat: 25.001842498779297,
         lng: 121.4969787597656
       },
       sitingFee: 100,
       travelExpenses: 0,
-      address: '新北市中和區景平路690號',
+      // address: '新北市中和區景平路690號',
+      address: '環狀線中和站',
       detail: '有沙包、免費拳套',
       suitableFor: '沙包訓練、力量訓練',
       total: 1300

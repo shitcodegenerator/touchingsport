@@ -6,9 +6,23 @@
   const changeBackground = (type: Plans) => {
     bgUrl.value = new URL(`../assets/images/${type}.jpg`, import.meta.url)
   }
+
+  // const upload = async () => {
+  //   const formElement = document.querySelector('form')
+
+  //   await fetch('http://localhost:3030/upload', {
+  //     method: 'POST',
+  //     body: new FormData(formElement),
+  //     headers: { 'Content-Type': 'multipart/form-data' }
+  //   })
+  // }
 </script>
 
 <template>
+  <!-- <form>
+    <input type="file" name="files" required />
+  </form>
+  <button @click="upload">UPLOAD</button> -->
   <NavBar />
   <Hero />
 
@@ -26,13 +40,13 @@
   </HomeBlock>
 
   <!-- 預約 -->
-  <Reservation />
+  <!-- <Reservation /> -->
 
   <!-- QA -->
   <Questions />
 
   <!-- 反饋 -->
-  <Feedback />
+  <!-- <Feedback /> -->
 
   <Footer />
 </template>

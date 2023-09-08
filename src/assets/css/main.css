@@ -10,3 +10,28 @@ html {
   color: rgb(68, 68, 68);
   font-family: 'Noto Sans TC', sans-serif;
 }
+
+.animate-underline {
+  position: relative;
+}
+
+.animate-underline::before {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: #ec3838;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  animation: underline 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes underline {
+  0% {
+    @apply w-1;
+  }
+  100% {
+    @apply w-32;
+  }
+}

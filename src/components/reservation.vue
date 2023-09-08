@@ -82,7 +82,6 @@
               <Calendar
                 :attributes="attributes"
                 expanded
-                color="sky-blue"
                 mode="dateTime"
                 :time-accuracy="1"
                 @dayclick="dayclick"
@@ -138,5 +137,15 @@
     --vc-accent-700: #7dd3fc;
     --vc-accent-800: #7dd3fc;
     --vc-accent-900: #7dd3fc;
+  }
+
+  .vc-highlight-content-solid.vc-red {
+    color: #fff !important;
+    border: 2px dashed #f73737;
+    background: transparent;
+  }
+
+  .vc-content-start {
+    border: 2px dashed #f73737;
   }
 </style>

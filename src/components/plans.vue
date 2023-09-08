@@ -17,7 +17,8 @@
   ]
 </script>
 <template>
-  <h2 class="text-5xl text-white text-center font-bold absolute z-10 left-1/2 -translate-x-1/2"
+  <h2
+    class="animate-underline text-4xl text-white text-center font-bold absolute z-10 left-1/2 -translate-x-1/2"
     >場地方案自由配</h2
   >
 

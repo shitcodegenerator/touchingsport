@@ -55,7 +55,12 @@
 </script>
 
 <template>
-  <UForm ref="form" :state="state" class="flex flex-col justify-around" @submit.prevent="submit">
+  <UForm
+    ref="form"
+    :state="state"
+    class="flex flex-col gap-8 justify-around"
+    @submit.prevent="submit"
+  >
     <UFormGroup label="學員姓名" name="name">
       <UInput v-model="state.name" />
     </UFormGroup>
@@ -64,25 +69,11 @@
       <UInput v-model="state.password" type="mobile" />
     </UFormGroup>
 
-    <!-- <UFormGroup label="預約時間">
-      <UInput :value="date.toLocaleDateString()" disabled />
-    </UFormGroup> -->
-
-    <!-- <UFormGroup label="上課地點">
-      <URadio v-for="place of places" :key="place.name" v-model="state.place" :value="place.value">
-        <template #label>
-          <h5 class="font-bold">{{ place.label }}</h5>
-          <div class="flex flex-col justify-start mb-3">
-            <span class="text-xs flex items-center"
-              ><UIcon name="i-heroicons-map" class="mr-1" />{{ place.address }}</span
-            >
-            <span class="text-sm text-yellow-500">NTD: {{ place.price }}</span>
-            <span class="text-xs">（場租100+教練費1000）</span>
-          </div>
-        </template></URadio
-      >
-    </UFormGroup> -->
-
-    <UButton type="submit" block> 立即預約 </UButton>
+    <div class="flex flex-row gap-4">
+      <UButton type="submit" class="flex-1 flex justify-center"> 立即預約 </UButton>
+      <UButton color="sky" variant="outline" type="submit" class="flex-1 flex justify-center">
+        線上諮詢
+      </UButton>
+    </div>
   </UForm>
 </template>

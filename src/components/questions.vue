@@ -39,7 +39,7 @@
 </script>
 <template>
   <HomeBlock id="qa" class="bg-[#f8f8f8]">
-    <h2 class="text-4xl text-center font-bold mb-20">常見問題</h2>
+    <h2 class="text-4xl text-center font-bold mb-20 animate-underline">常見問題</h2>
     <UAccordion class="background" :items="items"
   /></HomeBlock>
 </template>
