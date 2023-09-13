@@ -5,17 +5,17 @@
 
   const links = [
     {
-      label: '課程種類',
+      label: '教學方向',
       url: '#features'
     },
     {
       label: '場地資訊',
-      url: '#qa'
+      url: '#plans'
     },
-    {
-      label: '課程反饋',
-      url: '#feedback'
-    },
+    // {
+    //   label: '課程反饋',
+    //   url: '#feedback'
+    // },
     {
       label: '常見問題',
       url: '#qa'
@@ -28,12 +28,12 @@
 
   const socialMedias = [
     {
-      link: 'ytIcon',
+      link: 'https://www.youtube.com/',
       icon: ytIcon,
       name: 'Youtube'
     },
     {
-      link: 'ig',
+      link: 'https://www.instagram.com/touchingsport/',
       icon: igIcon,
       name: 'Instagram'
     },
@@ -51,7 +51,7 @@
   >
     <span class="font-['Bebas_Neue'] text-3xl text-white">TOUCHING SPORT</span>
 
-    <ul class="flex flex-row gap-10">
+    <ul class="sm:flex flex-row gap-10">
       <li
         v-for="i in links"
         :key="i.label"
@@ -65,7 +65,13 @@
       </li>
       <!-- Social Medias -->
       <div class="flex flex-row gap-4 items-center">
-        <a v-for="i in socialMedias" :key="i.name" :href="i.link" target="_blank">
+        <a
+          v-for="i in socialMedias"
+          :key="i.name"
+          :href="i.link"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img :src="i.icon" :alt="i.name" class="w-8" />
         </a>
       </div>

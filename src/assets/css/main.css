@@ -24,14 +24,17 @@ html {
   left: 50%;
   transform: translateX(-50%);
   content: '';
-  animation: underline 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  animation: underline 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }
 
 @keyframes underline {
   0% {
-    @apply w-1;
+    @apply w-0;
+  }
+  80% {
+    @apply w-32;
   }
   100% {
-    @apply w-32;
+    @apply w-0;
   }
 }

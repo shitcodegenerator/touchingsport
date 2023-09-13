@@ -1,62 +1,42 @@
 <script setup lang="ts">
-  const sideList = [
-    {
-      title: '場地方案自由挑選',
-      desc: '場地方案自由挑選場地方案自由挑選場地方案自由挑選場地方案自由挑選場地方案自由挑選'
-    },
-    {
-      title: '場地方案自由挑選',
-      desc: '場地方案自由挑選場地方案自由挑選場地方案自由挑選場地方案自由挑選場地方案自由挑選'
-    }
-  ]
+  import lineIcon from '@/assets/images/social/line.png'
 
   const router = useRouter()
 </script>
 
 <template>
-  <div class="flex w-screen h-[90vh]">
+  <div class="flex w-screen h-[70vh] md:h-[90vh]">
     <div class="hero">
       <img
         src="../assets/images/hero.png"
-        class="w-2/3 duration-300 hover:drop-shadow-lg mt-[50vh]"
+        class="md:w-2/3 duration-300 hover:drop-shadow-lg sm:mt-[50vh]"
       />
 
       <div class="text-container">
         <h1 class="title">TOUCHING SPORT</h1>
 
-        <p class="text-dark text-2xl tracking-wide">隨時隨地 想練就練 想打就打</p>
+        <p class="text-white drop-shadow sm:text-dark text-2xl tracking-wide"
+          >隨時隨地 想練就練 想打就打</p
+        >
+        <p class="text-white drop-shadow sm:text-dark tracking-wide">雙北地區自由約練，菜鳥進階</p>
         <button
-          class="rounded-full border border-white text-2xl px-6 flex items-center justify-center py-2 mt-10 bg-[#3a3a3a40] mb-10"
+          class="rounded-full cursor-pointer bg-red-500 hover:shadow-lg hover:scale-[1.05] duration-200 border border-white text-lg sm:text-2xl px-6 flex items-center justify-center py-2 bg-[#3a3a3a40] my-4 sm:my-10"
           @click="router.push({ hash: '#reservation' })"
-          >立即報名</button
+          >加入<img :src="lineIcon" class="w-10 px-2" alt="LINE" />好友，馬上預約</button
         >
         <ScrollDown />
       </div>
     </div>
-
-    <!-- <div class="flex flex-col flex-1">
-      <div
-        v-for="(i, index) in sideList"
-        :key="i.title"
-        class="side-hero"
-        :class="{ 'bg-gray': index === 1 }"
-      >
-        <h2 class="z-10 duration-300 text-white text-4xl font-bold">
-          {{ i.title }}
-        </h2>
-        <p class="z-10">asdfasdf</p>
-      </div>
-    </div> -->
   </div>
 </template>
 <style lang="scss" scoped>
   .hero {
-    @apply flex-[2] relative flex items-center justify-center overflow-hidden;
+    @apply flex-[2] relative flex items-center justify-center overflow-hidden pb-20 sm:pb-40;
     background: radial-gradient(50% 50% at 50% 50%, #e8e3e3 0%, #948f8b 100%);
   }
 
   .text-container {
-    @apply absolute flex flex-col items-center justify-center left-1/2 -translate-x-1/2 top-1/3 cursor-default w-full text-center text-white;
+    @apply absolute flex flex-col items-center justify-center left-1/2 -translate-x-1/2 top-1/4 sm:top-1/3 cursor-default w-full text-center text-white;
   }
 
   .side-hero {
@@ -78,7 +58,7 @@
   }
 
   .title {
-    @apply relative duration-500 leading-none hover:opacity-50 hover:drop-shadow-xl font-['Bebas_Neue'] text-[18rem] font-[900] text-white;
+    @apply relative xl:whitespace-nowrap  duration-500 leading-none hover:opacity-50 hover:drop-shadow-xl font-['Bebas_Neue'] text-[7rem] md:text-[12rem] xl:text-[16rem] font-[900] text-white;
     &::before {
       @apply leading-none absolute font-['Bebas_Neue'] w-screen font-[900] text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
       content: 'TOUCHING SPORT';
@@ -90,13 +70,13 @@
 
   @keyframes scaling {
     0% {
-      @apply text-[18rem] opacity-0;
+      @apply text-[8rem] md:text-[18rem] opacity-0;
     }
     50% {
-      @apply text-[30rem] opacity-10;
+      @apply text-[10rem] md:text-[20rem] opacity-10;
     }
     100% {
-      @apply text-[18rem] opacity-10;
+      @apply text-[8rem] md:text-[18rem] opacity-10;
     }
   }
 </style>

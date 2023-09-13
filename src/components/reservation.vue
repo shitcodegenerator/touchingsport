@@ -66,10 +66,28 @@
   })
 </script>
 <template>
-  <HomeBlock id="reservation" class="h-auto">
-    <h2 class="text-4xl text-center font-bold">馬上預約課程</h2>
+  <HomeBlock id="reservation" class="h-auto flex items-center px-4">
+    <h2 class="text-4xl text-center font-bold mb-10 sm:mb-20 animate-underline">馬上預約課程</h2>
+    <div class="flex flex-col gap-4 sm:gap-10 items-center">
+      <img
+        src="https://qr-official.line.me/gs/M_895hkczo_GW.png?oat_content=qr"
+        class="w-44 hidden sm:block"
+      />
+      <a href="https://lin.ee/EMMdfYd" rel="noreferrer noopener" target="_blank"
+        ><img
+          src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"
+          alt="加入好友"
+          class="h-10"
+          border="0"
+      /></a>
 
-    <div class="max-w-screen-md mx-auto">
+      <div class="flex flex-col gap-2 text-center">
+        <p>諮詢課程內容、預約上課時間</p>
+        <p>歡迎加入 LINE 官方帳號，讓我們對您進行一對一的服務！</p>
+      </div>
+    </div>
+
+    <!-- <div class="max-w-screen-md mx-auto">
       <div class="flex flex-col mt-20 gap-10">
         <div class="flex flex-col">
           <div class="flex flex-col">
@@ -114,7 +132,7 @@
 
         <ReservationForm class="flex-1" :date="attributes[0].dates[0]" />
       </div>
-    </div>
+    </div> -->
   </HomeBlock>
 </template>
 

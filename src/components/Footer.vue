@@ -23,20 +23,20 @@
 
   const links = [
     {
-      label: '課程種類',
-      url: '#qa'
+      label: '教學方向',
+      url: '#features'
     },
     {
       label: '場地資訊',
-      url: '#qa'
+      url: '#plans'
     },
-    {
-      label: '課程反饋',
-      url: '#qa'
-    },
+    // {
+    //   label: '課程反饋',
+    //   url: '#qa'
+    // },
     {
       label: '立即約課',
-      url: '#qa'
+      url: '#reservation'
     },
     {
       label: '常見問題',
@@ -46,17 +46,23 @@
 </script>
 <template>
   <footer class="w-full bg-[#aa3232]">
-    <div class="max-w-screen-xl mx-auto flex items-center justify-cetner flex-col py-20">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-cetner flex-col py-8 sm:py-20">
       <!-- 上排資訊  -->
-      <div class="flex items-center justify-between w-full mb-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between w-full mb-6">
         <ul>
-          <li v-for="i in links" :key="i.label" class="text-white">
+          <li v-for="i in links" :key="i.label" class="text-white leading-loose">
             <NuxtLink :to="{ hash: i.url }">{{ i.label }}</NuxtLink>
           </li>
         </ul>
         <!-- Social Medias -->
-        <div class="flex flex-row gap-4">
-          <a v-for="i in socialMedias" :key="i.name" :href="i.link" target="_blank">
+        <div class="flex flex-row gap-4 mt-4 sm:mt-0">
+          <a
+            v-for="i in socialMedias"
+            :key="i.name"
+            :href="i.link"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <img :src="i.icon" :alt="i.name" class="w-10" />
           </a>
         </div>
