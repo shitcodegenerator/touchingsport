@@ -8,9 +8,17 @@
   //     headers: { 'Content-Type': 'multipart/form-data' }
   //   })
   // }
+
+  useHead({
+    link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]
+  })
 </script>
 
 <template>
+  <Head>
+    <Title>Touching Sport | 最懂你的格鬥教練</Title>
+    <Meta name="Touching Sport | 最懂你的格鬥教練" content="Touching Sport | 最懂你的格鬥教練" />
+  </Head>
   <!-- <form>
     <input type="file" name="files" required />
   </form>
