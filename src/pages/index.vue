@@ -15,7 +15,7 @@
     <input type="file" name="files" required />
   </form>
   <button @click="upload">UPLOAD</button> -->
-  <NavBar class="hidden sm:block" />
+  <NavBar class="hidden sm:flex" />
   <MobileNav class="flex sm:hidden" />
   <Hero />
 
