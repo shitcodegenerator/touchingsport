@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="flex w-screen h-[100vh] md:h-[90vh]">
+  <div class="flex w-screen h-[80vh] md:h-[90vh]">
     <div class="hero">
       <img
         src="../assets/images/hero.png"

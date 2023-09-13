@@ -64,8 +64,11 @@
           >{{ i.title }}</div
         >
         <div
-          v-show="activeType === i.value"
-          class="z-10 w-full text-white text-sm bg-[#ffffff25] p-2 rounded"
+          :class="[
+            'z-10 w-full text-white text-sm bg-[#ffffff25] p-2 rounded',
+            { visible: activeType === i.value },
+            { invisible: activeType !== i.value }
+          ]"
         >
           {{ i.price }}
         </div>
@@ -82,7 +85,7 @@
 
 <style lang="scss" scoped>
   .plan-section {
-    @apply transition duration-500 bg-center bg-cover h-[80vh];
+    @apply transition duration-500 bg-center bg-cover sm:h-[80vh] h-auto;
     &:before {
       @apply absolute left-0 top-0 backdrop-blur-[4px]   w-full h-full;
       content: '';
