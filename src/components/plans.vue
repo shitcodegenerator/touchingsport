@@ -82,7 +82,7 @@
 
 <style lang="scss" scoped>
   .plan-section {
-    @apply transition duration-500 bg-center bg-cover h-[50vh] sm:h-[80vh];
+    @apply transition duration-500 bg-center bg-cover h-[80vh];
     &:before {
       @apply absolute left-0 top-0 backdrop-blur-[4px]   w-full h-full;
       content: '';
