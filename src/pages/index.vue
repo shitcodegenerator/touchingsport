@@ -10,7 +10,13 @@
   // }
 
   useHead({
-    link: [{ rel: 'icon', type: 'image/png', href: 'favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/png', href: 'favicon.ico' },
+      {
+        rel: 'canonical',
+        href: 'https://touchingsport.com/'
+      }
+    ]
   })
 </script>
 
